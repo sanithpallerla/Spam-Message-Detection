@@ -1,0 +1,54 @@
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>Title</title>-->
+<!--</head>-->
+<!--<body>-->
+
+<!--</body>-->
+<!--</html>-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Spam Text Predictor</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css"
+    />
+
+    <style>
+      .alert {
+        background: green;
+        padding: 1rem;
+        border-radius: 5px;
+        color: white;
+        margin: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h3>Spam Message Predictor</h3>
+    </div>
+
+    <!-- Form -->
+    <div class="container">
+      <form action="/result" method="GET">
+          <label for="Number One">Enter text you want to check</label>
+          <input type="text"
+                 placeholder="I'm waiting for text"
+                 class="u-full-width"
+                 name="Text"
+          />
+        <input type="button" value="predict" id="calc_btn" />
+        <br />
+        <div id="outputDiv" style="width: 500px; height: 75px; border: 1px solid;"> {{result}}</div>
+      </form>
+    </div>
+  </body>
+</html>
